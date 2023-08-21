@@ -1,10 +1,10 @@
 /* Components */
 import { Providers } from '@/lib/providers'
-import { Nav } from './components/Nav'
+import { Navbar } from '../Components/Navbar/Navbar'
 
 /* Instruments */
-import styles from './styles/layout.module.scss'
-import './styles/globals.scss'
+import styles from '@/styles/layout.module.scss'
+import '@/styles/globals.scss'
 
 export default function RootLayout(props: React.PropsWithChildren) {
   return (
@@ -12,7 +12,7 @@ export default function RootLayout(props: React.PropsWithChildren) {
       <html lang="en">
         <body>
           <section className={styles.container}>
-            <Nav />
+            <Navbar />
 
             <header className={styles.header}>
               <img src="/logo.svg" className={styles.logo} alt="logo" />
